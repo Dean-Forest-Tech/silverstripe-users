@@ -4,5 +4,5 @@ After: framework/routes#rootroutes
 ---
 SilverStripe\Control\Director:
   rules:
-    'users/register//$Action/$ID/$OtherID': 'ilateral\SilverStripe\Users\Control\RegisterController'
-    'users/account//$Action/$ID': 'ilateral\SilverStripe\Users\Control\AccountController'
+    'users/register//$Action/$ID/$OtherID': 'DFT\SilverStripe\Users\Control\RegisterController'
+    'users/account//$Action/$ID': 'DFT\SilverStripe\Users\Control\AccountController'

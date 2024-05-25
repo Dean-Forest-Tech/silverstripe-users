@@ -1,25 +1,24 @@
 <?php
 
-namespace ilateral\SilverStripe\Users\Control;
+namespace DFT\SilverStripe\Users\Control;
 
 use SilverStripe\i18n\i18n;
 use SilverStripe\ORM\ArrayList;
 use SilverStripe\View\SSViewer;
 use SilverStripe\View\ArrayData;
+use DFT\SilverStripe\Users\Users;
 use SilverStripe\Security\Member;
 use SilverStripe\Control\Director;
 use SilverStripe\Security\Security;
 use SilverStripe\Control\Controller;
 use SilverStripe\Forms\LiteralField;
 use SilverStripe\Security\Permission;
-use ilateral\SilverStripe\Users\Users;
 use SilverStripe\ORM\ValidationResult;
 use SilverStripe\Core\Injector\Injector;
 use SilverStripe\Subsites\Model\Subsite;
 use SilverStripe\Security\PermissionProvider;
+use DFT\SilverStripe\Users\Forms\EditAccountForm;
 use SilverStripe\CMS\Controllers\ContentController;
-use ilateral\SilverStripe\Users\Forms\EditAccountForm;
-use SilverStripe\Security\MemberAuthenticator\ChangePasswordForm;
 use SilverStripe\Security\MemberAuthenticator\MemberAuthenticator;
 use SilverStripe\Security\MemberAuthenticator\ChangePasswordHandler;
 
@@ -28,7 +27,6 @@ use SilverStripe\Security\MemberAuthenticator\ChangePasswordHandler;
  * the front end of the site.
  * 
  * @package Users
- * @author  i-lateral <info@ilateral.co.uk>
  */
 class AccountController extends Controller implements PermissionProvider
 {
@@ -245,7 +243,7 @@ class AccountController extends Controller implements PermissionProvider
             [
                 "Title" => "",
                 "Content" => $this->renderWith(
-                    "ilateral\\SilverStripe\\Users\\Includes\\ProfileSummary",
+                    "DFT\\SilverStripe\\Users\\Includes\\ProfileSummary",
                     ["CurrentUser" => Security::getCurrentUser()]
                 )
             ]
@@ -260,7 +258,7 @@ class AccountController extends Controller implements PermissionProvider
                 "Title" => _t('Users.ProfileSummary', 'Profile Summary'),
                 "MetaTitle" => _t('Users.ProfileSummary', 'Profile Summary'),
                 "Content" => $this->renderWith(
-                    "ilateral\\SilverStripe\\Users\\Includes\\AccountSections",
+                    "DFT\\SilverStripe\\Users\\Includes\\AccountSections",
                     ["Sections" => $sections]
                 )
             ]

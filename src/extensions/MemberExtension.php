@@ -1,25 +1,24 @@
 <?php
 
-namespace ilateral\SilverStripe\Users\Extensions;
+namespace DFT\SilverStripe\Users\Extensions;
 
-use SilverStripe\ORM\DataExtension;
-use SilverStripe\Control\Controller;
-use SilverStripe\Security\Permission;
 use SilverStripe\Security\Group;
-use SilverStripe\Security\Security;
-use SilverStripe\Security\IdentityStore;
-use SilverStripe\Core\Injector\Injector;
-use SilverStripe\Control\HTTPRequest;
 use SilverStripe\View\ArrayData;
+use DFT\SilverStripe\Users\Users;
+use SilverStripe\ORM\DataExtension;
+use SilverStripe\Security\Security;
+use SilverStripe\Control\Controller;
 use SilverStripe\Control\Email\Email;
-use ilateral\SilverStripe\Users\Users;
-use ilateral\SilverStripe\Users\Control\RegisterController;
+use SilverStripe\Control\HTTPRequest;
+use SilverStripe\Security\Permission;
+use SilverStripe\Core\Injector\Injector;
+use SilverStripe\Security\IdentityStore;
+use DFT\SilverStripe\Users\Control\RegisterController;
 
 /**
  * Overwrite Member object
  *
  * @package Users
- * @author  i-lateral <info@ilateral.co.uk>
  */
 class MemberExtension extends DataExtension
 {
@@ -113,7 +112,7 @@ class MemberExtension extends DataExtension
                 ->setFrom($from)
                 ->setTo($this->owner->Email)
                 ->setSubject($subject)
-                ->setHTMLTemplate("ilateral\\SilverStripe\\Users\\Email\\AccountVerification")
+                ->setHTMLTemplate("DFT\\SilverStripe\\Users\\Email\\AccountVerification")
                 ->setData(ArrayData::create([
                     "Link" => Controller::join_links(
                         $controller->AbsoluteLink("verify"),

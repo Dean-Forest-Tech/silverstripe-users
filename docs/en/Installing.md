@@ -3,7 +3,7 @@
 Then in the root of your project run:
 
 ```sh
-composer require i-lateral/silverstripe-users`
+composer require dft/silverstripe-users`
 ```
 
 Then rebuild your database by visiting `dev/build`. This will add the required database columns and tables for the module to function, and refresh the configuration manifest.
