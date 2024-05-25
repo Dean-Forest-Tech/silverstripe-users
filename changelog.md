@@ -44,6 +44,15 @@ Minor update to:
 * Switch to using frontend form fields to generate the "Edit Account Details" form
 * Add better error handling on edit account submission
 
+# 1.4.0
+
+* SS3.7 Compatability
+
+# 1.5.0
+
+* Update to DFT namespace
+
+
 # 2.0.0
 
 * SS4 support based on version 1.1.1
