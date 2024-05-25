@@ -46,4 +46,8 @@ Minor update to:
 
 # 1.4.0
 
+* SS3.7 Compatability
+
+# 1.5.0
+
 * Update to DFT namespace
