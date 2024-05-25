@@ -43,3 +43,7 @@ Minor update to:
 
 * Switch to using frontend form fields to generate the "Edit Account Details" form
 * Add better error handling on edit account submission
+
+# 1.4.0
+
+* Update to DFT namespace
