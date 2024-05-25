@@ -5,7 +5,7 @@
                 <% _t("Users.HELLO", "Hi") %>
                 $CurrentMember.FirstName</li>
             <li class="account">
-                <a href="{$BaseHref}users/account">
+                <a href="{$UsersAccountLink('index')}">
                     <% _t("Users.MYACCOUNT", "My account") %>
                 </a>
             </li>
@@ -21,7 +21,7 @@
                 </a>
             </li>
             <li class="register">
-                <a href="{$BaseHref}users/register">
+                <a href="{$UsersRegisterLink('index')}">
                     <% _t("Users.REGISTER", "Register") %>
                 </a>
             </li>

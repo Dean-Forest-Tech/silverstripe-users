@@ -7,7 +7,7 @@
 
 <% if $CurrentMember %>
     <p>
-        <a class="btn" href="{$BaseHref}users/account">
+        <a class="btn" href="{$UsersAccountLink('index')}">
             <% _t("Users.BackToAccount", "Back to your account") %>
         </a>
     </p>
