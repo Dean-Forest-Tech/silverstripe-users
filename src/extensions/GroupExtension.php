@@ -1,10 +1,10 @@
 <?php
 
-namespace ilateral\SilverStripe\Users\Extensions;
+namespace DFT\SilverStripe\Users\Extensions;
 
-use ilateral\SilverStripe\Users\Users;
 use SilverStripe\ORM\DB;
 use SilverStripe\Security\Group;
+use DFT\SilverStripe\Users\Users;
 use SilverStripe\ORM\DataExtension;
 use SilverStripe\Core\Config\Config;
 use SilverStripe\Security\Permission;
@@ -13,7 +13,6 @@ use SilverStripe\Security\Permission;
  * Overwrite group object so we can setup some more default groups
  *
  * @package Users
- * @author  i-lateral <info@ilateral.co.uk>
  */
 class GroupExtension extends DataExtension
 {

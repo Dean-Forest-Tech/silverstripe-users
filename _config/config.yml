@@ -3,14 +3,14 @@ Name: usersconfig
 ---
 SilverStripe\Security\Group:
   extensions:
-    - ilateral\SilverStripe\Users\Extensions\GroupExtension
+    - DFT\SilverStripe\Users\Extensions\GroupExtension
 SilverStripe\Security\Member:
   required_fields:
     - "FirstName"
     - "Surname"
     - "Email"
   extensions:
-    - ilateral\SilverStripe\Users\Extensions\MemberExtension
+    - DFT\SilverStripe\Users\Extensions\MemberExtension
 SilverStripe\Control\Controller:
   extensions:
-    - ilateral\SilverStripe\Users\Extensions\ControllerExtension
+    - DFT\SilverStripe\Users\Extensions\ControllerExtension

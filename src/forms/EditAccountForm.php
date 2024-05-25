@@ -1,14 +1,12 @@
 <?php
 
-namespace ilateral\SilverStripe\Users\Forms;
+namespace DFT\SilverStripe\Users\Forms;
 
 use Exception;
 use SilverStripe\i18n\i18n;
 use SilverStripe\Forms\Form;
 use SilverStripe\Forms\FieldList;
-use SilverStripe\Forms\TextField;
 use SilverStripe\Security\Member;
-use SilverStripe\Forms\EmailField;
 use SilverStripe\Forms\FormAction;
 use SilverStripe\Forms\HiddenField;
 use SilverStripe\Security\Security;
@@ -22,7 +20,6 @@ use SilverStripe\Core\Injector\Injector;
  * Default form for editing Member details
  *
  * @package Users
- * @author  i-lateral <info@ilateral.co.uk>
  */
 class EditAccountForm extends Form
 {

@@ -1,11 +1,12 @@
 <?php
 
-namespace ilateral\SilverStripe\Users\Control;
+namespace DFT\SilverStripe\Users\Control;
 
 use SilverStripe\i18n\i18n;
 use SilverStripe\Forms\Form;
 use SilverStripe\View\SSViewer;
 use SilverStripe\Security\Group;
+use DFT\SilverStripe\Users\Users;
 use SilverStripe\Forms\FieldList;
 use SilverStripe\Forms\TextField;
 use SilverStripe\Security\Member;
@@ -14,7 +15,6 @@ use SilverStripe\Forms\EmailField;
 use SilverStripe\Forms\FormAction;
 use SilverStripe\Security\Security;
 use SilverStripe\Control\Controller;
-use ilateral\SilverStripe\Users\Users;
 use SilverStripe\Forms\RequiredFields;
 use SilverStripe\ORM\ValidationResult;
 use SilverStripe\Core\Injector\Injector;
@@ -33,7 +33,6 @@ use SilverStripe\CMS\Controllers\ContentController;
  * $verification_groups config variable
  *
  * @package Users
- * @author  i-lateral <info@ilateral.co.uk>
  */
 class RegisterController extends Controller
 {
@@ -236,7 +235,7 @@ class RegisterController extends Controller
             "Title" => _t('Users.AccountVerification','Account Verification'),
             "MetaTitle" => _t('Users.AccountVerification','Account Verification'),
             "Content" => $this->renderWith(
-                "ilateral\\SilverStripe\\Users\\Includes\\SendVerificationContent",
+                "DFT\\SilverStripe\\Users\\Includes\\SendVerificationContent",
                 ["Sent" => $sent]
             ),
             "Sent" => $sent
@@ -279,7 +278,7 @@ class RegisterController extends Controller
             "Title" => _t('Users.AccountVerification','Account Verification'),
             "MetaTitle" => _t('Users.AccountVerification','Account Verification'),
             "Content" => $this->renderWith(
-                "ilateral\\SilverStripe\\Users\\Includes\\VerifyContent",
+                "DFT\\SilverStripe\\Users\\Includes\\VerifyContent",
                 ["Verify" => $verify]
             ),
             "Verify" => $verify

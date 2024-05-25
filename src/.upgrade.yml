@@ -1,0 +1,8 @@
+mappings:
+  Users_Account_Controller: DFT\SilverStripe\Users\Control\AccountController
+  Users_Register_Controller: DFT\SilverStripe\Users\Control\RegisterController
+  Ext_Users_Controller: DFT\SilverStripe\Users\Extensions
+  Ext_Users_Group: DFT\SilverStripe\Users\Extensions
+  Ext_Users_Member: DFT\SilverStripe\Users\Extensions
+  Users_EditAccountForm:
+  Users:

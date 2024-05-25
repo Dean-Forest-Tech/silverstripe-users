@@ -1,9 +1,8 @@
 <?php
 
-namespace ilateral\SilverStripe\Users;
+namespace DFT\SilverStripe\Users;
 
 use SilverStripe\Core\Config\Configurable;
-use SilverStripe\Dev\Deprecation;
 
 /**
  * Root class for users, this will mostly be used to store generic
@@ -11,7 +10,6 @@ use SilverStripe\Dev\Deprecation;
  * functionality.
  *
  * @package Users
- * @author  i-lateral <info@ilateral.co.uk>
  */
 class Users
 {

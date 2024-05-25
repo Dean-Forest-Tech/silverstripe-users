@@ -1,6 +1,6 @@
 <?php
 
-namespace ilateral\SilverStripe\Users\Extensions;
+namespace DFT\SilverStripe\Users\Extensions;
 
 use SilverStripe\Core\Extension;
 
@@ -9,7 +9,6 @@ use SilverStripe\Core\Extension;
  * interface to templates
  *
  * @package Users
- * @author  i-lateral <info@ilateral.co.uk>
  */
 class ControllerExtension extends Extension
 {
@@ -20,6 +19,6 @@ class ControllerExtension extends Extension
      */
     public function getUserAccountNav()
     {
-        return $this->owner->renderWith("ilateral\\SilverStripe\\Users\\Includes\\UserAccountNav");
+        return $this->owner->renderWith("DFT\\SilverStripe\\Users\\Includes\\UserAccountNav");
     }
 }
