@@ -394,7 +394,7 @@ class AccountController extends Controller implements PermissionProvider
 
         $form
             ->Actions()
-            ->insertBefore($cancel_btn, "action_doChangePassword");
+            ->insertBefore("action_doChangePassword", $cancel_btn);
 
         $this->extend("updateChangePasswordForm", $form);
 
